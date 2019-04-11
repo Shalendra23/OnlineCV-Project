@@ -8,7 +8,18 @@ body, html{
     color: #666;
 }
 
-.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+.pimg1{
+  position: relative;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+}
+
+.pimg2, .pimg3, .pimg4, .pimg5{
     position: relative;
     opacity: 0.70;
     background-position: center;
@@ -27,25 +38,29 @@ nav{
     padding: 10px 100px;
     box-sizing: border-box;
     transition: .3s;
+    z-index: 1;
 
 }
 
 nav.black{
-    background: rgba(0,0,0,.8);
-    height: 100px;
+  background: #FFF;
+   /*background: rgba(0,0,0,.8);*/
+    height: 80px;
     padding: 10px 100px;
     }
 
 nav .logo{
-   padding: 22px 20px;
+   padding: 12px 10px;
    height: 80px;
    float: left;
    font-size: 24px;
    transition: .3s;
 }
 
+
+
 nav.black .logo{
-    color: #fff;
+    color: #E2472F;
 }
 
 nav ul{
@@ -63,7 +78,7 @@ nav ul li{
 
 nav ul li a{
     line-height: 80px;
-    color: #151515;
+    color: #E2472F;
     padding: 12px 30px;
     text-decoration: none;
     text-transform: uppercase;
@@ -71,7 +86,7 @@ nav ul li a{
 }
 
 nav.black ul li a{
-    color: #fff;
+    color: #000;
 
 }
 
@@ -85,10 +100,72 @@ color: #fff;
 border-radius: 6px;
 }
 
+.intro{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro h1{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  top: 50%;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+}
+
+.intro img {
+
+position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border-color: #fff;
+    border-style: double;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+  }
+
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #000;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret 25.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
 .pimg1{
 
-    background-image: url('../images/saumrai.jpg');
-    min-height: 100%;
+    background-image: url('../images/aerial-shot-dark-from-above-1358699.jpg');
+    min-height: 70%;
     }
 
 .pimg2{
@@ -195,10 +272,10 @@ img{
 
 .scroll-downs {
     position: absolute;
-    top: 60%;
+    top: 80%;
     right: 0;
     bottom: 0;
-    left: 80%;
+    left: 0;
     margin: auto;
     
     width :34px;
@@ -208,16 +285,16 @@ img{
     width: 3px;
     padding: 10px 15px;
     height: 35px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 25px;
-    opacity: 0.75;
+    opacity: 0.75; 
     box-sizing: content-box;
   }
   .scroller {
     width: 3px;
     height: 10px;
     border-radius: 25%;
-    background-color: #000;
+    background-color: #E2472F;
     animation-name: scroll;
     animation-duration: 2.2s;
     animation-timing-function: cubic-bezier(.15,.41,.69,.94);
@@ -330,7 +407,7 @@ img{
   background-position: top left;
   transition: all ease-in-out 300ms;
   position: relative;
-  z-index: 10;
+/*  z-index: 10; */
 }
   
   .portfolio-item.small {
