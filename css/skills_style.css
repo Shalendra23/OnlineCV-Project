@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/black-and-white-blank-blur.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    /*  background: #607d8b;  */
+}
+
+.box{
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 150px);
+    transform: perspective(1000px) rotateY(-25deg);
+    width: 300px;
+    height: 500px;
+    transform-style: preserve-3d;
+  
+}
+
+.box:before{
+content: '';
+position: absolute;
+bottom: -100px;
+left: 0;
+width: 100%;
+height: 50px;
+background: #000;
+filter: blur(40px);
+opacity: 0.5;
+transform: rotateX(90deg);
+
+}
+
+.box div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: animatebox 15s linear infinite;
+}
+
+.box div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #f1f1f1, #bbb, #f1f1f1);
+  border-radius: 20px;
+  
+}
+
+.box div span:nth-child(1){
+    transform: rotateX(0deg);
+}
+.box div span:nth-child(2){
+    transform: rotateX(45deg);
+}
+.box div span:nth-child(3){
+    transform: rotateX(90deg);
+}
+.box div span:nth-child(4){
+    transform: rotateX(135deg);
+}
+.box div span:nth-child(5){
+    transform: rotateX(180deg);
+}
+.box div span:nth-child(6){
+    transform: rotateX(225deg);
+}
+.box div span:nth-child(7){
+    transform: rotateX(270deg);
+}
+.box div span:nth-child(8){
+    transform: rotateX(315deg);
+}
+.box div span:nth-child(9){
+    transform: rotateX(360deg);
+}
+
+
+@keyframes animatebox{
+    0%{
+        transform: perspective(1000px) rotateX(0deg);
+      }
+      100%{
+        transform: perspective(1000px) rotateX(359deg);
+      }
+}
+
+.box div span img{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    vertical-align: middle;
+
+}
+
+
+
+
+
+/*******************************/
+
+
+
+     html {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#mainnav {
+  position: absolute;
+  font-family: 'Roboto Condensed', sans-serif;
+  z-index: 1;
+    
+}
+#mainnav li {
+  margin: 55px 0;
+  left: -550px;
+  position: relative;
+  display: none;
+    
+}
+#mainnav a {
+  color: white;   
+  text-decoration: none;
+  font-size: 1.4em;
+
+      
+
+} 
+        ul li{
+            list-style: none;
+            margin-top: -50px;
+            
+        }
+.hamb {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2.5em;
+  color: white;
+  z-index: 1;
+}
+.hamb a {
+  color: white;
+  text-decoration: none;
+}
+html, body, .hero {
+  height: 100%;
+}
+.hero {
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+}
+h2 {
+  font-size: 5em;
+  text-align: left;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#bubble {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  position: fixed;
+  display: none;
+  z-index: 1;
+  background: rgba(0, 0, 0, .5);
+}
+     
+        
+        .gap{
+             
+            color: white;
+            margin-top: 100px;
+            width: 200px;
+            
+             
+             
+        }
+        
+        h3{
+       font-size: 5em;
+  text-align: right;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+        }
+        
+        
+        h2 span{
+            color: grey;
+        }
+        
+       h3 span{
+            color: grey;
+        }
+        
